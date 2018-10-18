@@ -276,7 +276,7 @@
     NSString *versionKey = [NSBundle stp_applicationVersion];
     if (bundleID && versionKey) {
         params.additionalAPIParameters = @{
-                                           @"alipay": @{
+                                           @"wechat": @{
                                                    @"app_bundle_id": bundleID,
                                                    @"app_version_key": versionKey,
                                                    },
