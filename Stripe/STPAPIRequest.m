@@ -38,9 +38,6 @@ static NSString * const JSONKeyObject = @"object";
                                  parameters:(NSDictionary *)parameters
                               deserializers:(NSArray<id<STPAPIResponseDecodable>>*)deserializers
                                  completion:(STPAPIResponseBlock)completion {
-    NSLog(@"postWithAPIClient");
-    NSLog(endpoint);
-    NSLog(parameters);
     
     // Build url
     NSURL *url = [apiClient.apiURL URLByAppendingPathComponent:endpoint];
@@ -150,10 +147,6 @@ static NSString * const JSONKeyObject = @"object";
     if (body) {
         jsonDictionary = [NSJSONSerialization JSONObjectWithData:body options:(NSJSONReadingOptions)kNilOptions error:NULL];
     }
-
-    NSLog(@"jsonDictionary");
-    NSLog(jsonDictionary);
-
     
     // Determine appropriate deserializer
     NSString *objectString = jsonDictionary[JSONKeyObject];
