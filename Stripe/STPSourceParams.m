@@ -263,7 +263,7 @@
     return params;
 }
 
-+ (STPSourceParams *)wechatParamsWithAmount:(NSUInteger)amount
++ (STPSourceParams *)weChatParamsWithAmount:(NSUInteger)amount
                                    currency:(NSString *)currency
                                   returnURL:(NSString *)returnURL {
     STPSourceParams *params = [self new];

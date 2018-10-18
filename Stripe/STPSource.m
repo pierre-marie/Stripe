@@ -311,6 +311,8 @@
             return STPLocalizedString(@"3D Secure", @"Source type brand name");
         case STPSourceTypeAlipay:
             return STPLocalizedString(@"Alipay", @"Source type brand name");
+        case STPSourceTypeWeChat:
+            return STPLocalizedString(@"WeChat", @"Source type brand name");
         case STPSourceTypeP24:
             return STPLocalizedString(@"P24", @"Source type brand name");
         case STPSourceTypeEPS:

@@ -15,6 +15,7 @@
 
 /* Source type brand name */
 "Alipay" = "Alipay";
+"WeChat" = "WeChat";
 
 /* Text for Apple Pay payment method */
 "Apple Pay" = "Apple Pay";
