@@ -39,10 +39,6 @@ typedef void (^STPBoolCompletionBlock)(BOOL success);
 - (nullable instancetype)initWithSource:(STPSource *)source
                              completion:(STPRedirectContextSourceCompletionBlock)completion {
 
-    if (source.type == STPSourceTypeWeChat) {
-        source.flow = STPSourceFlowRedirect
-    }
-    
     if (source.flow != STPSourceFlowRedirect
         || !(source.status == STPSourceStatusPending ||
              source.status == STPSourceStatusChargeable)) {
