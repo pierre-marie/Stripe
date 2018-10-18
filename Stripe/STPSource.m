@@ -263,7 +263,10 @@
     else if (source.type == STPSourceTypeSEPADebit) {
         source.sepaDebitDetails = [STPSourceSEPADebitDetails decodedObjectFromAPIResponse:source.details];
     }
-
+    else if (source.type == STPSourceTypeWeChat) {
+        source.qrCodeUrl = [[dict valueForKey:@"wechat"] valueForKey:@"qr_code_url"];
+    }
+    
     return source;
 }
 
