@@ -59,6 +59,7 @@
              @"sofort": @(STPSourceTypeSofort),
              @"three_d_secure": @(STPSourceTypeThreeDSecure),
              @"alipay": @(STPSourceTypeAlipay),
+             @"wechat": @(STPSourceTypeWeChat),
              @"p24": @(STPSourceTypeP24),
              @"eps": @(STPSourceTypeEPS),
              @"multibanco": @(STPSourceTypeMultibanco),

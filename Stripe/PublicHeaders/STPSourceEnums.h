@@ -140,6 +140,8 @@ typedef NS_ENUM(NSInteger, STPSourceType) {
      An Alipay source. @see https://stripe.com/docs/sources/alipay
      */
     STPSourceTypeAlipay,
+    
+    STPSourceTypeWeChat,
 
     /**
      A P24 source. @see https://stripe.com/docs/sources/p24

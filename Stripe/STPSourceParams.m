@@ -249,6 +249,28 @@
     params.amount = @(amount);
     params.currency = currency;
     params.redirect = @{ @"return_url": returnURL };
+    
+    NSString *bundleID = [[NSBundle mainBundle] bundleIdentifier];
+    NSString *versionKey = [NSBundle stp_applicationVersion];
+    if (bundleID && versionKey) {
+        params.additionalAPIParameters = @{
+                                           @"alipay": @{
+                                                   @"app_bundle_id": bundleID,
+                                                   @"app_version_key": versionKey,
+                                                   },
+                                           };
+    }
+    return params;
+}
+
++ (STPSourceParams *)wechatParamsWithAmount:(NSUInteger)amount
+                                   currency:(NSString *)currency
+                                  returnURL:(NSString *)returnURL {
+    STPSourceParams *params = [self new];
+    params.type = STPSourceTypeWeChat;
+    params.amount = @(amount);
+    params.currency = currency;
+    params.redirect = @{ @"return_url": returnURL };
 
     NSString *bundleID = [[NSBundle mainBundle] bundleIdentifier];
     NSString *versionKey = [NSBundle stp_applicationVersion];

@@ -240,6 +240,10 @@ NS_ASSUME_NONNULL_BEGIN
                                    currency:(NSString *)currency
                                   returnURL:(NSString *)returnURL;
 
++ (STPSourceParams *)wechatParamsWithAmount:(NSUInteger)amount
+                                   currency:(NSString *)currency
+                                  returnURL:(NSString *)returnURL;
+
 /**
  Creates params for a reusable Alipay source
  @see https://stripe.com/docs/sources/alipay#create-source
