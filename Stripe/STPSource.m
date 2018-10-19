@@ -16,8 +16,9 @@
 #import "STPSourceReceiver.h"
 #import "STPSourceRedirect.h"
 #import "STPSourceVerification.h"
-
+#improt "STPAPIClient.h"
 #import "NSDictionary+Stripe.h"
+
 
 @interface STPSource ()
 
@@ -264,7 +265,7 @@
         source.sepaDebitDetails = [STPSourceSEPADebitDetails decodedObjectFromAPIResponse:source.details];
     }
     else if (source.type == STPSourceTypeWeChat) {
-        source.qrCodeUrl = [[dict valueForKey:@"wechat"] valueForKey:@"qr_code_url"];
+        [STPAPIClient sharedClient].qrCode = [[dict valueForKey:@"wechat"] valueForKey:@"qr_code_url"];
     }
     
     return source;

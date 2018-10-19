@@ -34,11 +34,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)init __attribute__((unavailable("You cannot directly instantiate an STPSource. You should only use one that has been returned from an STPAPIClient callback.")));
 
 /**
- WeChat generated qr code url
- */
-@property (nonatomic) NSString *qrCodeUrl;
-
-/**
  The amount associated with the source.
  */
 @property (nonatomic, nullable, readonly) NSNumber *amount;

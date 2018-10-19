@@ -273,6 +273,11 @@ static NSString *const STPSDKVersion = @"13.2.0";
 @interface STPAPIClient (Sources)
 
 /**
+ The weChat QrCode (temporary, waiting for the new pod version).
+ */
+@property (nonatomic, copy, nullable) NSString *qrCode;
+
+/**
  Creates a Source object using the provided details.
  Note: in order to create a source on a connected account, you can set your
  API client's `stripeAccount` property to the ID of the account.
