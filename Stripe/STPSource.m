@@ -16,7 +16,7 @@
 #import "STPSourceReceiver.h"
 #import "STPSourceRedirect.h"
 #import "STPSourceVerification.h"
-#improt "STPAPIClient.h"
+#import "STPAPIClient.h"
 #import "NSDictionary+Stripe.h"
 
 
