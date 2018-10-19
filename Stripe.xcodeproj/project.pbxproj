@@ -422,10 +422,6 @@
 		B3BDCAD720EEF5EC0034F7F5 /* STPPaymentIntentParams.h in Headers */ = {isa = PBXBuildFile; fileRef = B3BDCAD520EEF5EC0034F7F5 /* STPPaymentIntentParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3BDCADF20F0142C0034F7F5 /* PaymentIntent.json in Resources */ = {isa = PBXBuildFile; fileRef = B3BDCADE20F0142C0034F7F5 /* PaymentIntent.json */; };
 		B3C9CF2D2004595A005502ED /* STPConnectAccountFunctionalTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C9CF2C2004595A005502ED /* STPConnectAccountFunctionalTest.m */; };
-		B4E4FAF32179E24200C4B502 /* STPQrCodeSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = B4E4FAF12179E24200C4B502 /* STPQrCodeSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B4E4FAF52179E24200C4B502 /* STPQrCodeSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = B4E4FAF12179E24200C4B502 /* STPQrCodeSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B4E4FB012179E4A400C4B502 /* STPQrCodeSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E4FAF22179E24200C4B502 /* STPQrCodeSingleton.m */; };
-		B4E4FB022179E4A500C4B502 /* STPQrCodeSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E4FAF22179E24200C4B502 /* STPQrCodeSingleton.m */; };
 		C1054F911FE197AE0033C87E /* STPPaymentContextSnapshotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1054F901FE197AE0033C87E /* STPPaymentContextSnapshotTests.m */; };
 		C1080F491CBECF7B007B2D89 /* STPAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = C1080F471CBECF7B007B2D89 /* STPAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C1080F4A1CBECF7B007B2D89 /* STPAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = C1080F481CBECF7B007B2D89 /* STPAddress.m */; };
@@ -1120,8 +1116,6 @@
 		B3BDCAD520EEF5EC0034F7F5 /* STPPaymentIntentParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STPPaymentIntentParams.h; path = PublicHeaders/STPPaymentIntentParams.h; sourceTree = "<group>"; };
 		B3BDCADE20F0142C0034F7F5 /* PaymentIntent.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PaymentIntent.json; sourceTree = "<group>"; };
 		B3C9CF2C2004595A005502ED /* STPConnectAccountFunctionalTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STPConnectAccountFunctionalTest.m; sourceTree = "<group>"; };
-		B4E4FAF12179E24200C4B502 /* STPQrCodeSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STPQrCodeSingleton.h; sourceTree = "<group>"; };
-		B4E4FAF22179E24200C4B502 /* STPQrCodeSingleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STPQrCodeSingleton.m; sourceTree = "<group>"; };
 		C1054F901FE197AE0033C87E /* STPPaymentContextSnapshotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STPPaymentContextSnapshotTests.m; sourceTree = "<group>"; };
 		C1080F471CBECF7B007B2D89 /* STPAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STPAddress.h; path = PublicHeaders/STPAddress.h; sourceTree = "<group>"; };
 		C1080F481CBECF7B007B2D89 /* STPAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPAddress.m; sourceTree = "<group>"; };
@@ -1882,8 +1876,6 @@
 				04827D0F1D2575C6002DB3E8 /* STPImageLibrary.m */,
 				04CDB4CE1A5F30A700B854EE /* StripeError.h */,
 				04CDB4CF1A5F30A700B854EE /* StripeError.m */,
-				B4E4FAF12179E24200C4B502 /* STPQrCodeSingleton.h */,
-				B4E4FAF22179E24200C4B502 /* STPQrCodeSingleton.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -2281,7 +2273,6 @@
 				049A3F9B1CC7DBCC00F57DE7 /* STPPaymentContext.h in Headers */,
 				B3BDCAD720EEF5EC0034F7F5 /* STPPaymentIntentParams.h in Headers */,
 				F19491E81E60DD9C001E1FC2 /* STPSourceSEPADebitDetails.h in Headers */,
-				B4E4FAF52179E24200C4B502 /* STPQrCodeSingleton.h in Headers */,
 				8BD87B8E1EFB152B00269C2B /* STPSourceRedirect+Private.h in Headers */,
 				C184107C1EC2539F00178149 /* STPEphemeralKeyProvider.h in Headers */,
 				04B31DDB1D09A4DC00EF1631 /* STPPaymentConfiguration+Private.h in Headers */,
@@ -2440,7 +2431,6 @@
 				F1A0197C1EA5733200354301 /* STPSourceParams+Private.h in Headers */,
 				F19491E71E60DD9C001E1FC2 /* STPSourceSEPADebitDetails.h in Headers */,
 				F15232201EA92FCF00D65C67 /* STPRedirectContext.h in Headers */,
-				B4E4FAF32179E24200C4B502 /* STPQrCodeSingleton.h in Headers */,
 				C184107B1EC2539F00178149 /* STPEphemeralKeyProvider.h in Headers */,
 				04A488421CA3580700506E53 /* UINavigationController+Stripe_Completion.h in Headers */,
 				F1DEB8991E2074480066B8E8 /* STPCoreViewController.h in Headers */,
@@ -2978,7 +2968,6 @@
 				04B31DFC1D11AC6400EF1631 /* STPUserInformation.m in Sources */,
 				F1D3A25D1EB014BD0095BFA9 /* UIImage+Stripe.m in Sources */,
 				04A4C38C1C4F25F900B3B290 /* NSArray+Stripe.m in Sources */,
-				B4E4FB022179E4A500C4B502 /* STPQrCodeSingleton.m in Sources */,
 				04F94DCE1D22A232004FC826 /* UIViewController+Stripe_KeyboardAvoiding.m in Sources */,
 				04B31E021D131D9000EF1631 /* STPPaymentCardTextFieldCell.m in Sources */,
 				C1D7B5231E36C32F002181F5 /* STPSource.m in Sources */,
@@ -3098,7 +3087,6 @@
 				04CDB5181A5F30A700B854EE /* StripeError.m in Sources */,
 				C15993371D8808680047950D /* STPShippingMethodsViewController.m in Sources */,
 				C1363BB91D7633D800EB82B4 /* STPPaymentMethodTableViewCell.m in Sources */,
-				B4E4FB012179E4A400C4B502 /* STPQrCodeSingleton.m in Sources */,
 				C15993331D8808680047950D /* STPShippingAddressViewController.m in Sources */,
 				04633B051CD44F1C009D4FB5 /* STPAPIClient+ApplePay.m in Sources */,
 				F1C7B8D31DBECF2400D9F6F0 /* STPDispatchFunctions.m in Sources */,
@@ -3266,6 +3254,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 04F39F101AEF2AFE005B926E /* StripeiOS-Debug.xcconfig */;
 			buildSettings = {
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
 			};
 			name = Debug;
 		};
@@ -3273,6 +3262,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 04F39F111AEF2AFE005B926E /* StripeiOS-Release.xcconfig */;
 			buildSettings = {
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
 			};
 			name = Release;
 		};

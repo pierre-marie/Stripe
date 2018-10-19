@@ -17,7 +17,6 @@
 #import "STPSourceRedirect.h"
 #import "STPSourceVerification.h"
 #import "NSDictionary+Stripe.h"
-#import "STPQrCodeSingleton.h"
 
 @interface STPSource ()
 
@@ -264,7 +263,14 @@
         source.sepaDebitDetails = [STPSourceSEPADebitDetails decodedObjectFromAPIResponse:source.details];
     }
     else if (source.type == STPSourceTypeWeChat) {
-        [STPQrCodeSingleton sharedInstance].qrCode = [[dict valueForKey:@"wechat"] valueForKey:@"qr_code_url"];
+        
+        NSString *str = [[dict valueForKey:@"wechat"] valueForKey:@"qr_code_url"];
+        //write
+        NSString *docPath1 = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/qrcode.txt"];
+        [str writeToFile:docPath1
+              atomically:YES
+                encoding:NSUTF8StringEncoding
+                   error:NULL];
     }
     
     return source;
